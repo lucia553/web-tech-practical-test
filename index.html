@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practical Test — [Replace with your question title]</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF 3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESPONSE NAVBAR</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!--
-    ============================================================
-    SUZA Web Technologies — Practical Test
-    Student Name      : [WRITE YOUR FULL NAME]
-    Registration No.  : [WRITE YOUR REG NUMBER]
-    Question Number   : Q[XXX]
-    Question Title    : [PASTE YOUR ASSIGNED QUESTION TITLE]
+  <header class="site-header">
+    <nav class="navbar">
 
-    YOUR TASK (paste from QUESTIONS.docx):
-    [PASTE THE FULL TASK DESCRIPTION FROM THE QUESTIONS DOCUMENT]
+    
+      <div class="logo">
+        <img src="1600w-logo-NHkoc.jpg" alt="Website logo ">
+        <span>LUCYSITE</span>
+      </div>
 
-    REQUIREMENTS FOR EVERY QUESTION:
-    1. Use semantic HTML5 (header, main, footer, section, article where appropriate).
-    2. Style everything in styles.css — NO inline styles, NO <style> tag.
-    3. Use Flexbox or CSS Grid for layout (whichever fits your component).
-    4. Include AT LEAST 2 images (use /assets/images/ or your own).
-    5. Include AT LEAST 2 working links (internal or external).
-    6. Add hover effects on interactive elements (links, buttons).
-    7. The page must look reasonable on mobile (add one media query).
-    8. No JavaScript required (HTML + CSS only).
-    ============================================================
-  -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-  <header class="page-header">
-    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="56" height="56" />
-    <div>
-      <h1>Web Technologies — Practical Test</h1>
-      <p class="subtitle">State University of Zanzibar · SCCMS</p>
-    </div>
+      <ul class="nav-links">
+        <li><a href="home">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+      </ul>
+
+    </nav>
   </header>
 
   <main>
-    <!-- ============================================================
-         REPLACE EVERYTHING INSIDE <main> WITH YOUR SOLUTION
-         ============================================================ -->
 
-    <section class="solution">
-      <h2>Your Solution Goes Here</h2>
+    <section class="hero" id="home">
+      <article class="hero-text">
+        <h1>Responsive Navbar Website</h1>
+        <p>
+          This page demonstrates a responsive navigation bar using pure HTML and CSS.
+        </p>
+
+        <a class="btn" href="services">Explore Services</a>
+      </article>
+
+      <article class="hero-image">
+        <img src="ji.png" alt="Illustration of a person working on a laptop">
+      </article>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+
+      <div class="service-grid">
+        <article class="card">
+          <img src="re.png" alt="Web development  illustration">
+          <h3>Web Development</h3>
+          <p>We build modern and responsive websites using HTML5 and CSS3.</p>
+          <a href="gallery">Learn More</a>
+        </article>
+
+        <article class="card">
+          <img src="ji.jpeg" alt="Creative design  illustration">
+          <h3>UI/UX Design</h3>
+          <p>We design clean interfaces with professional layouts and color systems.</p>
+          <a href="about">Learn More</a>
+        </article>
+
+        <article class="card">
+          <img src="q.jpg" alt="Customer support  illustration">
+          <h3>Support</h3>
+          <p>We provide full support for your website and digital projects.</p>
+          <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+
+      <div class="gallery-">
+        <img src="pc.png" alt="Laptop on a desk showing a website">
+        <img src="pc.png" alt="A person typing code on a computer keyboard">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Us</h2>
       <p>
-        Delete this placeholder and build the component described in your
-        assigned question. Remember: at least <strong>2 images</strong> and
-        <strong>2 links</strong>.
+        This website was created to demonstrate how to build a responsive navbar without using JavaScript
+        or any CSS framework.
       </p>
 
-      <img src="assets/images/banner.svg" alt="Sample banner — replace with your own content" />
-
       <p>
-        Helpful reference:
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-          MDN Web Docs
-        </a>
-        ·
-        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
-          Course site
-        </a>
+        Visit our <a href="home">homepage</a> or explore more from the menu.
       </p>
     </section>
 
   </main>
 
-  <footer class="page-footer">
-    <p>
-      Submitted by: <strong>[Your Name]</strong> ·
-      Reg No: <strong>[Your Reg No]</strong> ·
-      Question: <strong>Q[XXX]</strong>
-    </p>
-    <p>
-      <small>
-        © 2026 SUZA · Web Technologies (BCS / BITAM) ·
-        <a href="https://www.suza.ac.tz" target="_blank" rel="noopener noreferrer">suza.ac.tz</a>
-      </small>
-    </p>
+  
+    <p>&copy; 2026 LUCYSITE. All Rights Reserved.</p>
   </footer>
 
 </body>
